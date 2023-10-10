@@ -1,4 +1,6 @@
 .text {
+  font-size: 3.5vw;
+  font-family: 'Caveat';
   &::after {
     content: '_';
     visibility: hidden;

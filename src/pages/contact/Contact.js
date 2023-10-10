@@ -33,7 +33,7 @@ export const Contact = () => {
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      const response = await fetch(`https://formspree.io/f/xqkvgowl`, {
         method: 'POST',
         mode: 'cors',
         headers: {

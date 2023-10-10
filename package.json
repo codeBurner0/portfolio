@@ -37,6 +37,7 @@
     "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
+    "@react-icons/all-files": "^4.1.0",
     "caniuse-lite": "^1.0.30001543",
     "framer-motion": "^7.1.0",
     "mdx-bundler": "^9.0.1",

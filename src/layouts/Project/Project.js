@@ -130,7 +130,7 @@ export const ProjectBackground = ({ opacity = 0.7, className, ...rest }) => {
 
 export const ProjectImage = ({ className, alt, ...rest }) => (
   <div className={classes(styles.image, className)}>
-    <Image reveal alt={alt} delay={300} {...rest} />
+    <Image reveal alt={alt} delay={300} {...rest}/>
   </div>
 );
 

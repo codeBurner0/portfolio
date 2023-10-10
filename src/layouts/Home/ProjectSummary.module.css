@@ -217,6 +217,7 @@
   transition-duration: var(--durationXL);
   transition-delay: var(--durationM);
   opacity: 0;
+  font-family: 'BoldItalic';
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;
@@ -236,6 +237,7 @@
   transition-duration: var(--durationXL);
   transition-delay: var(--durationL);
   opacity: 0;
+  font-family: 'prime';
 
   @media (--mediaUseMotion) {
     transition-property: transform, opacity;

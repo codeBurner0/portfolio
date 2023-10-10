@@ -149,6 +149,7 @@
   transition-timing-function: var(--bezierFastoutSlowin);
   transition-duration: var(--durationXL);
   transition-delay: 0.2s;
+  font-family: monospace;
   opacity: 0;
   max-width: 100%;
   white-space: nowrap;

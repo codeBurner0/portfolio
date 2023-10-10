@@ -23,12 +23,28 @@
   }
 }
 
+.mainlogo{
+  width:8vw;
+  height: 6vw;
+  position: absolute;
+  top: 0vw;
+  left: -1vw;
+  fill: blue;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 650px) {
+  .mainlogo{
+    top: 1vw;
+    width:12vw;
+    height: 12vw;
+  }
+}
 .logo {
   display: flex;
   position: relative;
   padding: var(--spaceS) var(--spaceS) var(--spaceL);
   z-index: var(--zIndex2);
-
   @media (--mediaMobile) {
     padding-bottom: var(--spaceS);
   }
@@ -41,7 +57,6 @@
   align-items: center;
   flex: 1 1 auto;
   max-width: var(--space2XL);
-
   @media (--mediaMobile), (--mediaMobileLS) {
     display: none;
   }

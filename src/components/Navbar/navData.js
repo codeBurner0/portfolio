@@ -8,12 +8,12 @@ export const navLinks = [
     pathname: '/#details',
   },
   {
-    label: 'Articles',
-    pathname: '/articles',
-  },
-  {
     label: 'Contact',
     pathname: '/contact',
+  },
+  {
+    label: 'About',
+    pathname: '/#details',
   },
 ];
 
@@ -32,5 +32,10 @@ export const socialLinks = [
     label: 'Github',
     url: 'https://github.com/HamishMW',
     icon: 'github',
+  },
+  {
+    label: 'MainLogo',
+    url: '#intro',
+    icon: 'logo',
   },
 ];

@@ -192,9 +192,6 @@ const ImageElements = ({
           data-loaded={loaded}
           style={cssProps({ delay: numToMs(delay) })}
           ref={placeholderRef}
-          src={placeholder.src}
-          width={placeholder.width}
-          height={placeholder.height}
           onTransitionEnd={() => setShowPlaceholder(false)}
           decoding="async"
           alt=""

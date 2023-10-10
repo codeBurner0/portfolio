@@ -22,9 +22,6 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
   const theme = useTheme();
   const [disciplineIndex, setDisciplineIndex] = useState(0);
   const prevTheme = usePrevious(theme);
-  const introLabel = [disciplines.slice(0, -1).join(', '), disciplines.slice(-1)[0]].join(
-    ', and '
-  );
   const currentDiscipline = disciplines.find((item, index) => index === disciplineIndex);
   const titleId = `${id}-title`;
   const scrollToHash = useScrollToHash();
@@ -68,19 +65,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                 <DecoderText text="Ankit Anand" delay={300} />
               </h1>
               <Heading level={0} as="h2" className={styles.title}>
-                <VisuallyHidden className={styles.label}>
-                  {`Designer + ${introLabel}`}
-                </VisuallyHidden>
-                <span aria-hidden className={styles.row}>
-                  <span
-                    className={styles.word}
-                    data-status={status}
-                    style={cssProps({ delay: tokens.base.durationXS })}
-                  >
-                    Developer
-                  </span>
-                  <span className={styles.line} data-status={status} />
-                </span>
+                
                 <div className={styles.row} component="span">
                   <AnimatePresence>
                     {disciplines.map(item => (
@@ -94,7 +79,7 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                           <span
                             aria-hidden
                             className={styles.word}
-                            data-plus={true}
+                            data-plus={false}
                             data-status={status}
                             style={cssProps({ delay: tokens.base.durationL })}
                           >
@@ -105,6 +90,17 @@ export function Intro({ id, sectionRef, disciplines, scrollIndicatorHidden, ...r
                     ))}
                   </AnimatePresence>
                 </div>
+                <span aria-hidden className={styles.row}>
+                  <span
+                    className={styles.word}
+                    data-status={status}
+                    style={cssProps({ delay: tokens.base.durationXS })}
+                  >
+                    +Developer
+                  </span>
+                  <span className={styles.line} data-status={status} />
+                </span>
+                
               </Heading>
             </header>
             <RouterLink href="/#project-1">

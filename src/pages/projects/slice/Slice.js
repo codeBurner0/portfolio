@@ -11,7 +11,7 @@ import sliceBackgroundLarge from 'assets/slice-background-large.jpg';
 import sliceBackgroundPlaceholder from 'assets/slice-background-placeholder.jpg';
 import sliceBackground from 'assets/slice-background.jpg';
 import sliceIrlPlaceholder from 'assets/slice-irl-placeholder.jpg';
-import sliceIrl from 'assets/slice-irl.jpg';
+import sliceIrl from 'assets/images/proj1-home.png';
 import sliceSidebarAnnotationsLarge from 'assets/slice-sidebar-annotations-large.png';
 import sliceSidebarAnnotationsPlaceholder from 'assets/slice-sidebar-annotations-placeholder.png';
 import sliceSidebarAnnotations from 'assets/slice-sidebar-annotations.png';
