@@ -1,4 +1,3 @@
-import notFoundPoster from 'assets/notfound.jpg';
 import notFoundVideo from 'assets/notfound.mp4';
 import { Button } from 'components/Button';
 import { DecoderText } from 'components/DecoderText';
@@ -63,7 +62,7 @@ export function Page404() {
                 playsInline
                 className={styles.video}
                 data-visible={visible}
-                poster={notFoundPoster.src}
+                poster={notFoundVideo.src}
               >
                 <source src={notFoundVideo} type="video/mp4" />
               </video>

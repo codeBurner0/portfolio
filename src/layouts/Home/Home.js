@@ -1,14 +1,13 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
-import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
-import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
-import sliceTextureLarge from 'assets/slice-app-large.jpg';
-import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
+import ManiaProj from 'assets/images/Mania/Mania1.jpg';
+import ManiaProj2 from 'assets/images/Mania/Mania2.jpg';
+import InfoSync from 'assets/images/InfoSync/InfosyncHome.png'
+import BlogFusionMobo from 'assets/images/BlogFusion/BlogFusionMobo2.jpg'
+import BlogFusionMobo2 from 'assets/images/BlogFusion/BlogFusionMobo.jpg'
 import sliceTexture from 'assets/slice-app.jpg';
-import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
 import Proj1Home from 'assets/images/Fintrec/proj1laptop.png';
+import IcreateHome from "assets/images/Icreate/Icreatelaptop.jpg"
+import TripmateMobo1 from "assets/images/Tripmate/Tripmatemobo1.jpg"
+import TripmateMobo2 from "assets/images/Tripmate/Tripmatemobo2.jpg"
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -27,10 +26,13 @@ export const Home = () => {
   const projectTwo = useRef();
   const projectThree = useRef();
   const projectFour = useRef();
+  const projectFive = useRef();
+  const projectSix = useRef();
+  const projectSeven = useRef();
   const details = useRef();
 
   useEffect(() => {
-    const sections = [intro, projectOne, projectTwo, projectThree,projectFour, details];
+    const sections = [intro, projectOne, projectTwo, projectThree, projectFour, projectFive,projectSix,projectSeven, details];
 
     const sectionObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -83,17 +85,17 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Hello! WhatsUp what are you doing?"
-        description="Designing a platform to help educators build better online courseware"
+        title="ICreate- AI Image Generator"
+        description="Transform words into vibrant visuals with our dynamic text-to-image web app. Try it now!"
         buttonText="View project"
-        buttonLink="/projects/smart-sparrow"
+        buttonLink="/projects/Icreate"
         model={{
           type: 'laptop',
-          alt: 'Smart Sparrow lesson builder',
+          alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [Proj1Home],
-              placeholder: sprTexturePlaceholder,
+              srcSet: [IcreateHome],
+              placeholder: IcreateHome,
             },
           ],
         }}
@@ -104,21 +106,21 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
-        buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        title="MoviesMania- A Movie Application"
+        description="Escape reality, embrace reel life: Your movie paradise is just clicks away."
+        buttonText="View project"
+        buttonLink="/projects/Mania"
         model={{
           type: 'phone',
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
-              placeholder: gamestackTexturePlaceholder,
+              srcSet: [ManiaProj2],
+              placeholder: ManiaProj2,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
-              placeholder: gamestackTexture2Placeholder,
+              srcSet: [ManiaProj],
+              placeholder: ManiaProj2,
             },
           ],
         }}
@@ -128,37 +130,107 @@ export const Home = () => {
         sectionRef={projectThree}
         visible={visibleSections.includes(projectThree.current)}
         index={3}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        title="Fintrec- A Finance Indicator"
+        description="Crypto mastery at your fingertips: Stay ahead with live tracking and analysis."
         buttonText="View project"
-        buttonLink="/projects/slice"
+        buttonLink="/projects/Fintrec"
         model={{
           type: 'laptop',
-          alt: 'Annotating a biomedical image in the Slice app',
+          alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [Proj1Home],
+              placeholder: Proj1Home,
             },
           ],
         }}
       />
       <ProjectSummary
         id="project-4"
+        alternate
         sectionRef={projectFour}
         visible={visibleSections.includes(projectFour.current)}
         index={4}
-        title="Biomedical image collaboration"
-        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
-        buttonText="hello"
-        buttonLink="/projects/slice"
+        title="BlogFusion- A Blog Application"
+        description="Secure, seamless, expressive: Elevate your blogging experience with our curated platform."
+        buttonText="View project"
+        buttonLink="/projects/BlogFusion"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [BlogFusionMobo],
+              placeholder: BlogFusionMobo,
+            },
+            {
+              srcSet: [BlogFusionMobo2],
+              placeholder: BlogFusionMobo2,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-5"
+        sectionRef={projectFive}
+        visible={visibleSections.includes(projectFive.current)}
+        index={5}
+        title="InfoSync- DashBoard"
+        description="Elevate your operations: A unified dashboard for tracking, optimizing, and winning."
+        buttonText="View project"
+        buttonLink="/projects/InfoSync"
         model={{
           type: 'laptop',
           alt: 'Annotating a biomedical image in the Slice app',
           textures: [
             {
-              srcSet: [sliceTexture, sliceTextureLarge],
-              placeholder: sliceTexturePlaceholder,
+              srcSet: [InfoSync],
+              placeholder: InfoSync,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-6"
+        alternate
+        sectionRef={projectSix}
+        visible={visibleSections.includes(projectSix.current)}
+        index={6}
+        title="TripMate- Your Trip Buddy"
+        description="Adventure starts here: Discover, choose, and book your ideal accommodation."
+        buttonText="View website"
+        buttonLink="/projects/Tripmate"
+        model={{
+          type: 'phone',
+          alt: 'App login screen',
+          textures: [
+            {
+              srcSet: [TripmateMobo2],
+              placeholder: BlogFusionMobo,
+            },
+            {
+              srcSet: [TripmateMobo1],
+              placeholder: BlogFusionMobo2,
+            },
+          ],
+        }}
+      />
+      <ProjectSummary
+        id="project-7"
+        sectionRef={projectSeven}
+        visible={visibleSections.includes(projectSeven.current)}
+        index={7}
+        title="Biomedical image collaboration"
+        description="Increasing the amount of collaboration in Slice, an app for biomedical imaging"
+        buttonText="view project"
+        buttonLink="/projects/"
+        model={{
+          type: 'laptop',
+          alt: 'Annotating a biomedical image in the Slice app',
+          textures: [
+            {
+              srcSet: [sliceTexture],
+              placeholder: sliceTexture,
             },
           ],
         }}
@@ -168,7 +240,9 @@ export const Home = () => {
         visible={visibleSections.includes(details.current)}
         id="details"
       />
+      
       <Footer />
+
     </div>
   );
 };

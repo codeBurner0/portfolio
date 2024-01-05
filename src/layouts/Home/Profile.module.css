@@ -115,6 +115,7 @@
 .image {
   position: relative;
   width: 100%;
+  border: 5px solid #00E5FF;
 }
 
 .svg {

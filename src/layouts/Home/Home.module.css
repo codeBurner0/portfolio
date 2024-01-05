@@ -25,4 +25,11 @@
   font-weight: 400;
   font-style: normal;
   }
+@font-face {
+  font-family: 'concert';
+  src: url('../../assets/fonts/ConcertOne-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  }
+  
   

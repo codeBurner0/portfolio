@@ -24,18 +24,31 @@
 }
 
 .mainlogo{
-  width:8vw;
-  height: 6vw;
+  width:5vw;
+  height: 5vw;
   position: absolute;
-  top: 0vw;
+  top: 1.5vw;
   left: -1vw;
-  fill: blue;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 950px) {
   .mainlogo{
-    top: 1vw;
+    top: 1.5vw;
+    width:6vw;
+    height: 6vw;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .mainlogo{
+    top: 2vw;
+    width:8vw;
+    height: 8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mainlogo{
+    top: 2,6vw;
     width:12vw;
     height: 12vw;
   }

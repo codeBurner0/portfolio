@@ -49,4 +49,5 @@
   &[data-secondary='true'] {
     color: var(--colorTextLight);
   }
+  
 }

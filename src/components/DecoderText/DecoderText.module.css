@@ -17,3 +17,15 @@
 .value {
   opacity: 1;
 }
+
+
+@media only screen and (max-width: 800px) {
+  .text {
+    font-size: 4vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .text {
+    font-size: 6vw;
+  }
+}

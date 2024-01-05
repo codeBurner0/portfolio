@@ -14,7 +14,6 @@ import { useFormInput } from 'hooks';
 import { useRef, useState } from 'react';
 import { cssProps, msToNum, numToMs } from 'utils/style';
 import styles from './Contact.module.css';
-
 export const Contact = () => {
   const errorRef = useRef();
   const email = useFormInput('');
@@ -32,7 +31,6 @@ export const Contact = () => {
 
     try {
       setSending(true);
-
       const response = await fetch(`https://formspree.io/f/xqkvgowl`, {
         method: 'POST',
         mode: 'cors',
